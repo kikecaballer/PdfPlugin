@@ -1,0 +1,4 @@
+PdfPlugin
+=========
+
+PdfPlugin for Cordova
