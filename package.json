@@ -1,0 +1,13 @@
+{
+    "version": "0.0.1",
+    "name": "com.slashmobility.plugins.pdf",
+    "cordova_name": "Pdf",
+    "description": "Pdf creation Plugin",
+    "repo": "https://github.com/kikecaballer/PdfPlugin",
+    "issue": "https://github.com/kikecaballer/PdfPlugin/issues",
+    "license": "MIT",
+    "keywords": [
+        "pdf",
+        "cordova"
+    ]
+}
