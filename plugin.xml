@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.slashmobility.plugins.pdf" version="0.0.1">
-    <name>Pdf</name>
+    id="com.slashmobility.pdfPlugin" 
+    version="0.1.0">
+    <name>PdfPlugin</name>
     <description>Pdf creation Plugin</description>
     <license>Apache 2.0</license>
     <keywords>Cordova, Pdf</keywords>
-    <repo>https://github.com/kikecaballer/PdfPlugin</repo>
-    <issue>https://github.com/kikecaballer/PdfPlugin/issues</issue>
-
-  <js-module src="www/pdf.js" name="pdf">
-    <clobbers target="com.slashmobility.plugins.pdf" />
-  </js-module>
-
-  <!-- ios -->
-  <platform name="ios">
-      <config-file target="config.xml" parent="/*">
-          <feature name="Pdf">
-              <param name="ios-package" value="Pdf" onload="true" />
-          </feature>
-      </config-file>
-      <!--
-      <header-file src="src/ios/IonicKeyboard.h" />
-      <source-file src="src/ios/IonicKeyboard.m" />
-      <header-file src="src/ios/UIWebViewExtension.h" />
-      <source-file src="src/ios/UIWebViewExtension.m" />
-    -->
-  </platform>
-
+    <js-module src="www/pdf.js" name="pdfPlugin">
+            <clobbers target="cordova.plugins.PdfPlugin"/>
+    </js-module>
+    <platform name="ios">        
+        <config-file target="config.xml" parent="/*">
+            <feature name="PdfPlugin">
+                <param name="ios-package" onload="true" value="PdfPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/PdfPlugin.h" />
+        <source-file src="src/ios/PdfPlugin.m" />
+        <header-file src="src/ios/NDHTMLtoPDF.h" />
+        <source-file src="src/ios/NDHTMLtoPDF.m" />
+    </platform>
 </plugin>
+
