@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "name": "com.slashmobility.pdfPlugin",
+    "cordova_name": "PdfPlugin",
+    "description": "Pdf creation Plugin",
+    "license": "MIT",
+    "keywords": [
+        "pdf",
+        "cordova"
+    ]
+}
